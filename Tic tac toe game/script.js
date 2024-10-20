@@ -90,3 +90,21 @@ const checkWinner = () => {
 
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
+
+ // Scroll Animation Trigger
+ const sections = document.querySelectorAll('.scroll-in');
+ window.addEventListener('scroll', checkScroll);
+
+ function checkScroll() {
+     const triggerBottom = window.innerHeight * 0.9;
+     sections.forEach(section => {
+         const sectionTop = section.getBoundingClientRect().top;
+         if (sectionTop < triggerBottom) {
+             section.classList.add('visible');
+         } else {
+             section.classList.remove('visible');
+         }
+     });
+ }
+ 
