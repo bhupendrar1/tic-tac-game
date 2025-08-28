@@ -47,9 +47,7 @@ This project implements the classic Tic-Tac-Toe (Noughts and Crosses) game using
 
 1. Clone or download the repository:
 
-```bash
-git clone gh repo clone bhupendrar1/tic-tac-game
-```
+  git clone https://github.com/bhupendrar1
 
 2. Open `index.html` in any modern web browser (Chrome, Firefox, Edge, Safari).
 
